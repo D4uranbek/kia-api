@@ -22,7 +22,7 @@ public class ModelController {
     private final ModelService service;
 
     @GetMapping(value = "/models")
-    public ResponseEntity<List<ModelMinPriceDto>> getAll() throws JsonProcessingException {
+    public ResponseEntity<List<ModelMinPriceDto>> getAll() {
         return service.getAll();
     }
 

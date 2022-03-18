@@ -25,7 +25,7 @@ public class ModelService {
 
     private final ModelMapper mapper;
 
-    public ResponseEntity<List<ModelMinPriceDto>> getAll() throws JsonProcessingException {
+    public ResponseEntity<List<ModelMinPriceDto>> getAll() {
         String categoriesJson = new RestTemplate()
                 .getForObject("https://api.kia-motors.uz/models", String.class);
 
