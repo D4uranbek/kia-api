@@ -29,7 +29,6 @@ public class ModelService {
         String categoriesJson = new RestTemplate()
                 .getForObject("https://api.kia-motors.uz/models", String.class);
 
-
         assert categoriesJson != null;
 
         Type type = new TypeToken<List<Category>>() {}.getType();
